@@ -1,0 +1,141 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #A7A8CD;
+  display: flex;
+  justify-content: center;
+  border: 16px solid #ffffff;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+/* Card Container */
+.card {
+  background: white;
+  border-radius: 10px;
+ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 450px;
+  width: 90%;
+  position: relative;
+  overflow: visible;
+  text-align: center;
+  img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/* Badge */
+.badge {
+  background-color: #fbe19b;
+  color: black;
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 15px 50px 50px 15px;
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  margin-left: -10px;
+  z-index: 10;
+}
+
+.image-card{
+  border-radius: 50px;
+}
+
+/* Image */
+.watch-image {
+  width: 100%;
+  max-height: fit-content;
+  object-fit: contain;
+}
+
+/* Card Content */
+.card-content {
+  padding: 15px;
+ text-align: start;
+}
+
+.card-content h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-content .series {
+  font-size: 14px;
+  color: grey;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .card-content h1 {
+    font-size: 18px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+}
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}

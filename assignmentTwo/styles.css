@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #FFFFFF;
+  h1 {
+    color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  }
+  p {
+    color: black;
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  span {
+    color: #047857;
+  }
+  }
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-color: #666666;
+  border-top: 8px solid #999999;
+  
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: white;
+  border-bottom: 8px solid #999999;
+}
+
+.wealth {
+  background-color: #F59E0B;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 8px solid;
+  border-bottom-color: #D97706;
+  height: 5rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.sub {
+  padding: 1rem;
+  .p {
+    font-size: 2.5rem;
+  }
+  p:nth-of-type(2){
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wealth {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wealth {
+    margin-left: -0.5rem;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .section-2 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-one {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    .p {
+      width: 50%;
+    }
+  }
+}
+
+.heading {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.paragraph {
+    color: #000;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 6px;
+    width: 50%;
+}
+
+.highlight {
+    color: #228B22;
+}
+
+.section-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 14px 24%;
+    background-color: #666666;
+    border-top: 8px solid;
+}
+
+.card {
+    width: 100%;
+    margin: 16px 0;
+    background-color: #FFFFFF;
+}
+
+.card-header {
+    background-color: #FFD700;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 4px;
+    border-bottom: 8px solid #DAA520;
+    height: 80px;
+    margin: 2px 4%;
+}
+
+.card-content {
+    padding: 4px;
+}
+
+.card-paragraph {
+    font-size: 1rem;
+    margin: 3px 0;
+}
+
+
+ /* 1. Use a more-intuitive box-sizing model */
+ *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
